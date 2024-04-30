@@ -18,7 +18,8 @@
 # entropy bits as calculated by the trigraph way of calculating it.  60-70 entropy bits is generally considered very strong, so this
 # should be sufficient until cloud providers deliver a stronger defense.
 # 
-# Requires makepasswd(1) tool at [khorben/makepasswd: Makepasswd generates (pseudo-)random passwords of a desired length](https://github.com/khorben/makepasswd/).
+# Requires makepasswd(1) tool at [khorben/makepasswd: Makepasswd generates (pseudo-)random passwords of a desired length](https://github.com/khorben/makepasswd/),
+# which is available in many distributions.
 # 
 #   In Red Hat Enterprise Linux, CentOS, Rocky Linux, Fedora and distributions that use dnf: sudo dnf install makepasswd
 #   In Debian, Ubuntu, Mint, Elementary OS and distributions that use apt-get: sudo apt-get install makepasswd
@@ -28,7 +29,7 @@
 #   https://search.nixos.org/packages?channel=23.11&from=0&size=50&sort=relevance&type=packages&query=makepasswd
 # Under NixOS, makepasswd(1) might need to be built and packaged from source. We opened Issue
 #   https://github.com/NixOS/nixpkgs/issues/308030
-# requesting packaging of makepasswd(1). Also not found in Homebrew at https://formulae.brew.sh/
+# requesting packaging of makepasswd(1). Also not found in Homebrew at https://formulae.brew.sh/.
 # 
 # Home at https://github.com/automaticit-anthonyyen1/s3-bucket-name-generator, Issues and Pull Requests welcome.
 # 
