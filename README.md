@@ -21,15 +21,15 @@ should be sufficient until cloud providers deliver a stronger defense.
 
 Requires makepasswd(1) tool at [khorben/makepasswd: Makepasswd generates (pseudo-)random passwords of a desired length](https://github.com/khorben/makepasswd/), which is available in many Linux distributions.
 
-In Red Hat Enterprise Linux, CentOS, Rocky Linux, Fedora and distributions that use dnf:  
+In Red Hat Enterprise Linux, CentOS, Rocky Linux, Fedora and distributions that use ``dnf``:  
 ```shell
 sudo dnf install makepasswd
 ```
-In Debian, Ubuntu, Mint, Elementary OS and distributions that use apt-get:  
+In Debian, Ubuntu, Mint, Elementary OS and distributions that use ``apt-get``:  
 ```shell
 sudo apt-get install makepasswd
 ```
-In Arch Linux, Manjaro and distributions that use pacman:  
+In Arch Linux, Manjaro and distributions that use ``pacman``:  
 ```shell
 sudo pacman -S makepasswd
 ```
