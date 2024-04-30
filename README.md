@@ -1,9 +1,11 @@
 # s3-bucket-name-generator
 Generate an S3 bucket name that is hard to guess to mitigate DoS billing attack discussed in below article and thread.  
   
-Usage: s3-bucket-name-generator.sh [ -t ]  
-
-OPTION  
+# Usage
+```
+s3-bucket-name-generator.sh [ -t ]  
+```
+# OPTION  
 <dl>
   <dt>-t</dt>
   <dd>Enforce S3 bucket name restriction when using Amazon S3 Transfer Acceleration, that is, no dots (.) allowed.</dd>
@@ -39,3 +41,9 @@ As of April 2024, we could not find makepasswd in NixOS packages searching at:
 Under NixOS, makepasswd(1) might need to be built and packaged from source. We opened Issue  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;https://github.com/NixOS/nixpkgs/issues/308030  
 requesting packaging of makepasswd(1). Also not found in Homebrew at https://formulae.brew.sh/.
+
+# INSTALL
+Copy down [``s3-bucket-name-generator.sh``](https://raw.githubusercontent.com/automaticit-anthonyyen1/s3-bucket-name-generator/main/s3-bucket-name-generator.sh)
+to your computer, set execute permission bits with ``chmod u+x s3-bucket-name-generator.sh``, and execute with ``./s3-bucket-name-generator.sh``. We expect this
+attack vector will be mitigated relatively promptly, so didn't bother packaging for easier installation, but welcome Pull Requests that implement the packaging
+if others submit them.
